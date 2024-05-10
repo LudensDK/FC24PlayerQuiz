@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>FC Player Quiz
+    </title>
+    <link rel="stylesheet" href="style.css"> <!-- CSSを読み込む -->
+    <script src="app.js"></script> <!-- JavaScriptファイルを読み込む -->
+</head>
+<body>
+
+    <div id="overlay" class="hidden"></div> <!-- 隠し状態のオーバーレイ -->
+
+    <h1>FC Player Quiz</h1>
+    
+    <div id="enter-area">
+        <label for="min-rating">Min Overall:</label>
+        <input type="number" id="min-rating" step="5" value="80">
+        
+    </div>
+    <div class="center-container">
+        <div class="button-container"> <!-- ボタンを横並びに配置 -->
+            <button onclick="startProcess()">Start</button> <!-- スタートボタン -->
+            <button onclick="resetProcess()">Reset</button> <!-- リセットボタン -->
+        </div>
+
+      
+
+    </div>
+    <div id="top-player-display"></div> <!-- トッププレーヤー情報を表示 -->
+    <div id="top-player-area"></div> <!-- トッププレーヤー用エリア -->
+    <div id="selected-players-area"></div> <!-- 選択された選手一覧用エリア -->
+</body>
+</html>
