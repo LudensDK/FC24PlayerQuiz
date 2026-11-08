@@ -5,7 +5,7 @@ function startProcess() {
 
     const minRating = parseFloat(document.getElementById('min-rating').value);
 
-    fetch('data/players.csv') // CSVファイルを読み込む
+    fetch('data/playerdata2.csv') // CSVファイルを読み込む
         .then(response => response.text())
         .then(csvText => {
             const rows = csvText.split('\n').map(row => row.split(','));
@@ -15,7 +15,7 @@ function startProcess() {
                     short_name: row[headers.indexOf("short_name")],
                     nationality_name: row[headers.indexOf("nationality_name")],
                     player_positions: row[headers.indexOf("player_positions")],
-                    overall: parseFloat(row[headers.indexOf("overall_rating")]), // 評価値
+                    overall: parseFloat(row[headers.indexOf("overall")]), // 評価値
                     player_id: parseInt(row[headers.indexOf("player_id")]),
                     club_team_id: parseInt(row[headers.indexOf("club_team_id")]),
                     nationality_id: parseInt(row[headers.indexOf("nationality_id")]),
