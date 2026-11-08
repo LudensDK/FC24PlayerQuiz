@@ -80,7 +80,7 @@ function showTopPlayerInfo(topPlayer) {
         // チームのエンブレム画像
         const NationTeamId = topPlayer.nationality_id; // チームID
         const emblemImg = document.createElement('img');
-        const emblemImgURL = `https://game-assets.fut.gg/2024/nations/${NationTeamId}.png`;
+        const emblemImgURL = `https://game-assets.fut.gg/2027/nations/${NationTeamId}.png`;
 
         emblemImg.src = emblemImgURL;
         emblemImg.alt = `国旗: ${topPlayer.nationality_name}`;
